@@ -1,0 +1,20 @@
+<div id="content">
+  <div id="focus">
+    <p class="title-username">{{data.attributes.title}} - {{data.relations.user.attributes.username}}</p>
+    <img src="{{data.attributes.link}}"/>
+    <p>{{data.attributes.description}}</p>
+    <p>Copyright {{data.attributes.author}}</p>
+    <a href="/gallery/{{data.attributes.id}}/edit">edit</a>
+    <form action="/gallery/{{data.attributes.id}}?_method=DELETE" method="POST">
+      <button type="submit">Delete</button>
+    </form>
+  </div>
+  <div id="links">
+    {{#each gallery}}
+    <a href="/gallery/{{id}}">
+      <img src="{{link}}" class="link-image"/>
+    </a>
+    <p class="title-username">{{description}} - {{user.username}}</p>
+    {{/each}}
+  </div>
+</div>

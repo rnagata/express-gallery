@@ -1,0 +1,30 @@
+<div id="banner">
+  <h1 id = "title">DigiScape</h1>
+  <p id = "subtitle">
+    Celebrating artistry and imagination through inspiring digital media.
+  </p>
+</div>
+<div id="nav-bar">
+  <a href='logout'>Logout</a>
+  <a href='/gallery/new'>New</a>
+</div>
+<div id="featured">
+  <a href="/gallery/{{featured.attributes.id}}">
+    <img src="{{featured.attributes.link}}" id="featured-image"/>
+  </a>
+</div>
+<div id="list">
+  {{#each gallery}}
+  <div>
+    <a href="/gallery/{{id}}">
+      <img src="{{attributes.link}}" class="list-image"/>
+    </a>
+    <div>
+      <p class="list-descriptors">
+      {{attributes.title}} - {{relations.user.attributes.username}}
+      </p>
+    </div>
+  </div>
+  {{/each}}
+</div>
+<div id="bottom-bar"></div>

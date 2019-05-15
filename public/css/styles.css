@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+#banner {
+  display: flex;
+  border-top: 2px solid gray;
+  text-align: center; }
+
+#title {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 50px;
+  margin: 0px;
+  padding: 10px 20px; }
+
+#subtitle {
+  font-family: 'Noto Sans', sans-serif; }
+
+#nav-bar {
+  display: flex;
+  justify-content: space-evenly; }
+
+#featured {
+  padding: 5px;
+  border-bottom: 2px solid gray; }
+
+#featured-image {
+  max-width: 100%;
+  height: auto; }
+
+#list {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 8px;
+  flex-wrap: wrap;
+  flex-direction: row; }
+
+#list > div {
+  width: 33%; }
+
+.list-image {
+  max-width: 100%;
+  height: auto; }
+
+.list-descriptors {
+  font-size: 20px;
+  color: gray;
+  margin: 0px;
+  padding: 8px 0px; }
+
+#bottom-bar {
+  border-bottom: 2px solid gray; }
+
+@media screen and (max-width: 600px) {
+  #banner {
+    justify-content: center;
+    border-top: none;
+    border-bottom: 2px solid gray; }
+  #subtitle {
+    display: none; }
+  #list > div {
+    width: 100%; } }
+
+#content {
+  display: flex; }
+
+#focus {
+  min-width: 75%; }
+
+.title-username {
+  color: gray; }
+
+#focus > img {
+  max-width: 100%; }
+
+#links {
+  max-width: 25%; }
+
+.link-image {
+  max-width: 100%; }
+
+body {
+  padding: 10px 50px; }
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px 20px; } }

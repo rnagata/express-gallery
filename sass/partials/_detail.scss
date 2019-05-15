@@ -1,0 +1,23 @@
+#content{
+  display: flex;
+}
+
+#focus{
+  min-width: 75%;
+}
+
+.title-username{
+  color: gray;
+}
+
+#focus > img{
+  max-width: 100%;
+}
+
+#links{
+  max-width: 25%;
+}
+
+.link-image{
+  max-width: 100%;
+}

@@ -5,9 +5,9 @@ exports.seed = function(knex, Promise) {
     .then(function () {
       // Inserts seed entries
       return knex('gallery').insert([
-        {user_id: 1, link: 'https://mondrian.mashable.com/uploads%252Fcard%252Fimage%252F829044%252Ff1a11a98-59ed-46a9-a2df-bf2a6997ee31.jpg%252F950x534__filters%253Aquality%252890%2529.jpg?signature=RrPci3GH-I_L_lLLrMTuazG5jXc=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com', description: 'pretty'},
-        {user_id: 2, link: 'https://mondrian.mashable.com/uploads%252Fcard%252Fimage%252F829044%252Ff1a11a98-59ed-46a9-a2df-bf2a6997ee31.jpg%252F950x534__filters%253Aquality%252890%2529.jpg?signature=RrPci3GH-I_L_lLLrMTuazG5jXc=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com', description: 'beautiful'},
-        {user_id: 3, link: 'https://mondrian.mashable.com/uploads%252Fcard%252Fimage%252F829044%252Ff1a11a98-59ed-46a9-a2df-bf2a6997ee31.jpg%252F950x534__filters%253Aquality%252890%2529.jpg?signature=RrPci3GH-I_L_lLLrMTuazG5jXc=&source=https%3A%2F%2Fblueprint-api-production.s3.amazonaws.com', description: 'amazing'}
+        {user_id: 1, link: 'http://tophdimgs.com/data_images/wallpapers/34/442323-shambhala.jpg', title: 'Shambala', author: 'Naughty Dog', description: 'A view of ruins overtaken by nature featuring a fallen statue and abnormal trees.'},
+        {user_id: 2, link: 'https://i.redd.it/ivtc9348ne501.jpg', title: 'Irithyll of the Boreal Valley', author: 'From Software / nojuan87', description: 'A mythical city full of mystery'},
+        {user_id: 3, link: 'https://www.stripes.com/polopoly_fs/1.297220.1407436475!/image/image.jpg_gen/derivatives/landscape_900/image.jpg', title: 'Salt Lake City', author: 'Naughty Dog', description: 'If America suffered a zombie apocalypse.'}
       ]);
     });
 };

@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+@import 'partials/index';
+@import 'partials/detail';
+
+body {
+  padding: 10px 50px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 10px 20px;
+  }
+}
